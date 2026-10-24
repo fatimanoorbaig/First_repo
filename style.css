@@ -1,0 +1,287 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   Header & Navigation
+========================= */
+
+header {
+    background-color: #172554;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 8%;
+}
+
+#home > div:first-child {
+    max-width: 600px;
+}
+
+#home p:first-child {
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+#home h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+#home p {
+    margin-bottom: 25px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#home a:hover {
+    background-color: #1d4ed8;
+}
+
+#home img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #2563eb;
+}
+
+
+/* =========================
+   General Sections
+========================= */
+
+section:not(#home) {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section:not(#home) > h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+
+/* =========================
+   About Section
+========================= */
+
+#about > p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Skills Section
+========================= */
+
+#skills > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#skills > div > div {
+    background-color: white;
+    width: 250px;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+#skills h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Projects Section
+========================= */
+
+#projects > div {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+article {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: left;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+article a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Contact Form
+========================= */
+
+form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width:
